@@ -1,0 +1,24 @@
+<div class="container ">
+    <div class="row">
+      <div class="col col-md-4 offset-md-5">
+        <legend>List airport</legend>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col col-sm-3 m-2 offset-md-5" *ngFor="let airport of airports">
+        <div>
+          <div class="card">
+            <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/airport-building.png" alt="airport-building"/>
+              <div class="card-body">
+                <h5 class="card-title">{{airport.name}}</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">City: {{airport.city}}</li>
+                  <li class="list-group-item">Country: {{airport.country}}</li>
+                  <li class="list-group-item">AirportCode: {{airport.code}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
